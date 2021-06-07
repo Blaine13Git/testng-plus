@@ -80,15 +80,15 @@ public class DBConn {
                 List<String> urlArr = new ArrayList<>(Arrays.asList(dbconf.getConnectionUrl().split(",")));
                 ArrayList arrayList = new ArrayList(Arrays.asList(user.split(",")));
                 List<String> passwordArr = new ArrayList<>(Arrays.asList(password.split(",")));
-                urlArr.add("jdbc:mysql://test-xc-daily.mysql.rds.aliyuncs.com:3331/qacenter");
-                arrayList.add("test_rw_qacenter");
-                passwordArr.add("te#st_rDw_qaFcenGterM");
+                urlArr.add("jdbc:mysql://xxx:3331/qacenter");
+                arrayList.add("tester"); // user
+                passwordArr.add("tester");
                 Class.forName("com.mysql.jdbc.Driver");
                 int index = 0;
                 for (String url : urlArr) {
                     if (url.contains("qacenter")) {
-                        user = "test_rw_qacenter";
-                        password = "te#st_rDw_qaFcenGterM";
+                        user = "tester";
+                        password = "tester";
                     }
                     if (arrayList.size() > 2 && passwordArr.size() > 2 && arrayList.size() == passwordArr.size() && arrayList.size() == urlArr.size()) {
                         user = (String) arrayList.get(index);

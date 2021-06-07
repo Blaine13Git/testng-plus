@@ -67,15 +67,15 @@
     <!--部署到mvn服务器-->
     <distributionManagement>
         <repository>
-            <id>xinc818-releases</id>
+            <id>xxx-releases</id>
             <name>Team Nexus Repository</name>
-            <url>http://maven.xinc818.com/repository/maven-releases/</url>
+            <url>http://maven.xxx.com/repository/maven-releases/</url>
         </repository>
 
         <snapshotRepository>
-            <id>xinc818-snapshots</id>
+            <id>xxx-snapshots</id>
             <name>Team Nexus Repository</name>
-            <url>http://maven.xinc818.com/repository/maven-snapshots/</url>
+            <url>http://maven.xxx.com/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
